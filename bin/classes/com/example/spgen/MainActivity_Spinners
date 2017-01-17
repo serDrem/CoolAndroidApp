@@ -1,0 +1,53 @@
+package com.example.spgen;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.Spinner;
+
+public class MainActivity extends Activity {
+	
+	public final static String EXTRA_MESSAGE1 = "com.example.myfirstapp.MESSAGE";
+	public final static String EXTRA_MESSAGE2 = "com.example.myfirstapp.MESSAGE2";
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);        
+        setContentView(R.layout.activity_main);
+    	Spinner board_spinner = (Spinner) findViewById(R.id.board_spinner);
+    	Spinner peaces_spinner = (Spinner) findViewById(R.id.peaces_spinner);
+    	// Create an ArrayAdapter using the string array and a default spinner layout
+    	ArrayAdapter<CharSequence>  board_spinner_adapter = ArrayAdapter.createFromResource(this,
+    	        R.array.board_array, android.R.layout.simple_spinner_item);
+    	ArrayAdapter<CharSequence> peaces_spinner_adapter = ArrayAdapter.createFromResource(this,
+    	        R.array.peaces_array, android.R.layout.simple_spinner_item);    	
+    	// Specify the layout to use when the list of choices appears
+    	board_spinner_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    	peaces_spinner_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    	// Apply the adapter to the spinner
+    	board_spinner.setAdapter(board_spinner_adapter);    
+    	peaces_spinner.setAdapter(peaces_spinner_adapter);      
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.activity_main, menu);
+        return true;
+    }
+    /** Called when the user clicks the Send button */
+    public void sendMessage(View view) {
+    	Intent intent = new Intent(this, DisplayBoardActivity.class); 
+    	Spinner  boardText = (Spinner) findViewById(R.id.board_spinner);
+    	Spinner  peaceText = (Spinner) findViewById(R.id.peaces_spinner);
+    	String message1 = boardText.getSelectedItem().toString();
+    	String message2 = peaceText.getSelectedItem().toString();
+    	intent.putExtra(EXTRA_MESSAGE1, message1);
+    	intent.putExtra(EXTRA_MESSAGE2, message2);
+    	startActivity(intent);
+    }
+}
+

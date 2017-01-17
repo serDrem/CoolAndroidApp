@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+ 	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <CheckBox android:id="@+id/checkbox_07"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_17"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_27"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_37"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_47"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_57"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_67"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_77"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <CheckBox android:id="@+id/checkbox_06"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_16"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_26"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_36"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_46"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_56"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_66"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>
+        <CheckBox android:id="@+id/checkbox_76"
+       		android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:onClick="onCheckboxClicked"/>        
+    </TableRow> 
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="@string/button_send" />
+
+     </TableRow>         
+
+</TableLayout>

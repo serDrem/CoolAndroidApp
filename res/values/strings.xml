@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">SPGen</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Submit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_board_display">DisplayBoardActivity</string>
+
+    <string-array name="peaces_array">
+        <item>King</item>
+        <item>Queen</item>
+        <item>Rook</item>
+        <item>Bishop</item>
+        <item>Knight</item>
+        <item>Pawn</item>
+        <item>Messiah</item>
+    </string-array>  
+    
+    <string-array name="board_array">
+        <item>8x8</item>
+        <item>16x16</item>
+        <item>32x32</item>
+        <item>64x64</item>
+    </string-array>   
+    
+    <string-array name="board_array2">
+        <item>plain</item>
+        <item>random</item>
+        <item>special</item>
+    </string-array>  
+    
+</resources>

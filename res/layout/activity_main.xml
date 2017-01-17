@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <Spinner
+    	android:id="@+id/board_spinner"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" />    
+    	
+     <Spinner
+    	android:id="@+id/board_spinner2"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" />   
+    	
+    <Spinner
+    	android:id="@+id/peaces_spinner"
+   		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/obstacles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25px"
+        android:hint="Obstacles: &lt;y 0-63>,&lt; x 0-64> ...." >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/startStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="25px"
+        android:hint="StartStop: &lt;y 0-63>,&lt; x 0-64>" >
+    </EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:onClick="sendMessage"  />       
+</LinearLayout>
